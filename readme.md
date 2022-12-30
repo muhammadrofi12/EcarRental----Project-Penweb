@@ -9,7 +9,7 @@ This repo for project UAS and others.
   
 
 2. MY TEAM:
-    - Muhamad Rofi'ul Arham
+    - Muhammad Rofi'ul Arham
     - Roza Kurniawan Nur Wakid
     - Syayid Muhammad Akbar
 
