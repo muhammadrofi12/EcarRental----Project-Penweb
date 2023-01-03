@@ -96,9 +96,9 @@ input:not(:placeholder-shown) ~ .reset {
     padding: 9px;
    }
 
-   .tools h4{
+   /* .tools h4{
     padding-left: 2rem;
-   }
+   } */
    
    .circle {
     padding: 0 4px;
