@@ -68,8 +68,6 @@
 
     <!-- Main -->
     <div class="container-fluid mt-5">
-
-
       <!-- Form -->
       <div class="card">
         <div class="row">
@@ -178,15 +176,35 @@
             <div class=" col-md-4 col-lg-4">&nbsp;</div>
             <div class="col-md-5 col-lg-5">&nbsp;</div>
             <div class="col-md-3 col-lg-3">
-                <input class="btn btn-primary" type="submit" value="Submit">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Submit
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Thank you for booking</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      please check your email for details.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Oke</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
                 <input class="btn btn-danger" type="reset" value="Reset">
             </div>
           </div>
           
         </form>
       </div>
-    <!-- End Form -->
-<!-- End Main -->
+      <!-- End Form -->
+    <!-- End Main -->
 
     <!-- Footer -->
     <div class="container-fluid mt-5">
