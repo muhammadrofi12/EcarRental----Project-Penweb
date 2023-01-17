@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css" />
     <link rel="stylesheet" href="assets/css/Navigation-with-Search.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- Animasi AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
       <!-- Icon -->
   <link rel="shortcut icon" href="assets/img/iconWeb1.jpg" type="image/x-icon">
@@ -115,7 +117,9 @@
                 <br />
               </p>
             </div>
-            <div class="col-lg-4 mb-5 mb-lg-0"><img class="img-fluid" src="assets/img/tentang.jpg" /></div>
+            <div class="col-lg-4 mb-5 mb-lg-0" data-aos="zoom-our-up" data-aos-duration="1500">
+              <img class="img-fluid" src="assets/img/tentang.jpg" />
+            </div>
           </div>
 
         </div>
@@ -162,7 +166,13 @@
       <!-- End Footer -->
     </div>
 
-        <!-- JS Bootstrap -->
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- JS Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
