@@ -27,9 +27,9 @@
     <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="../../index3.html" method="post">
+      <form onsubmit="login()">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" placeholder="Email" id="email">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Password" id="password">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -55,7 +55,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn- btn-block"><a href="../index.html">Sign In</a></button>
+            <button type="submit" class="btn btn-info btn-block">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
@@ -90,5 +90,22 @@
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
+
+<script>
+  function login() {
+      event.preventDefault();
+
+      let user = document.getElementById("email").value;
+      let pass = document.getElementById("password").value;
+
+      if (user == "admin@eCarRental.id" && pass == "admin") {
+
+          alert("Selamat, Anda Berhasil Login Admin!");
+          location.replace("daftarKendaraan.html");
+      } else {
+          alert("Username atau Pasword anda salah!");
+      }
+  }
+</script>
 </body>
 </html>
